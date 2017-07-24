@@ -13,6 +13,7 @@ void gugudan_5();
 void gugudan_6();
 void gugudan_7();
 void gugudan_8();
+void gugudan_9();
 
 
 
@@ -48,6 +49,7 @@ void gugudan() {
 	case 6:gugudan_6(); break;
 	case 7:gugudan_7(); break;
 	case 8:gugudan_8(); break;
+	case 9:gugudan_9(); break;
 
 	}
 }
@@ -133,6 +135,17 @@ void gugudan_8() {
 	int i;
 	int j;
 	for (i = 1; i < 9; i++) {
+		for (j = 1; j < 10; j++) {
+			printf("%d x %d = %d\n", i, j, i*j);
+		}
+		printf("\n");
+	}
+}
+
+void gugudan_9() {
+	int i;
+	int j;
+	for (i = 1; i < 10; i++) {
 		for (j = 1; j < 10; j++) {
 			printf("%d x %d = %d\n", i, j, i*j);
 		}
