@@ -3,6 +3,8 @@ subin
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 void gugudan();
 void gugudan_1();
@@ -133,8 +135,7 @@ void gugudan_7() {
 
 void shooting_star() {
 	int number = 0, i, j;
-	printf("input number\n");
-	scanf("%d", &number);
+	number = rand() % 11 + 1;
 
 	for (i = 0; i < number; i++) {
 		for (j = 0; j < i + 1; j++) {
